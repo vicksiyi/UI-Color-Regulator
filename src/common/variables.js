@@ -6,6 +6,11 @@ const variables = {
     guiSize: {
         width: 440,
         height: 440
+    },
+    hsl: {
+        h: 20,
+        s: 30,
+        l: 23
     }
 }
 
