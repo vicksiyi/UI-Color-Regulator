@@ -1,0 +1,30 @@
+{
+    "compilerOptions": {
+        "target": "es2017",
+        "module": "ES6",
+        "baseUrl": "./src",
+        "lib": [
+            "ES2019",
+            "ES2020",
+            "dom"
+        ],
+        "moduleResolution": "node",
+        "removeComments": true,
+        "esModuleInterop": true,
+        "typeRoots": [
+            "./node_modules/@types",
+            "./node_modules/@jsdesigndeveloper",
+            "./src/ui/common"
+        ],
+        "declaration": true,
+        "allowJs": true,
+        "outDir": "dist",
+        "declarationMap": true
+    },
+    "include": [
+        "src/**/*"
+    ],
+    "exclude": [
+        "node_modules",
+    ]
+}

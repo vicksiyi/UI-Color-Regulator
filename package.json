@@ -1,0 +1,38 @@
+{
+  "name": "ui-color-regulator",
+  "version": "1.0.0",
+  "description": "一个即时设计的颜色调节器插件",
+  "main": "code.js",
+  "scripts": {
+    "build:watch": "webpack  -w"
+  },
+  "keywords": [
+    "即时设计",
+    "颜色调节器",
+    "HSL",
+    "CMYK"
+  ],
+  "author": "ZeroIce",
+  "license": "ISC",
+  "devDependencies": {
+    "@jsdesigndeveloper/plugin-typings": "^1.0.3",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^3.6.0",
+    "file-loader": "^6.0.0",
+    "html-webpack-inline-source-plugin": "^1.0.0-beta.2",
+    "html-webpack-plugin": "^4.5.2",
+    "nanoid": "^4.0.0",
+    "normalize.css": "^8.0.1",
+    "prettier": "^1.19.1",
+    "sass": "^1.26.5",
+    "sass-loader": "^8.0.2",
+    "style-loader": "^1.3.0",
+    "svelte": "^3.22.3",
+    "svelte-loader": "^2.13.6",
+    "svg-inline-loader": "^0.8.2",
+    "ts-loader": "^6.2.2",
+    "typescript": "^3.9.10",
+    "webpack": "^4.46.0",
+    "webpack-cli": "^3.3.12"
+  }
+}
