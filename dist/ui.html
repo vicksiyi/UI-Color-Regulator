@@ -2944,7 +2944,7 @@ function add_css(target) {
 	Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append_styles"])(target, "svelte-shsgqa", "main.svelte-shsgqa.svelte-shsgqa{overflow:hidden;padding:0 16px 16px 16px}h1.svelte-shsgqa.svelte-shsgqa{font-size:12px;font-weight:500;color:rgba(32, 32, 32, 1)}.color-detail.svelte-shsgqa.svelte-shsgqa{display:flex;justify-content:space-around}.color-detail.svelte-shsgqa>div.svelte-shsgqa{border-radius:2px}.color-palate.svelte-shsgqa.svelte-shsgqa{flex:1;padding:4px 8px;color:#fff;display:flex;flex-wrap:wrap;justify-content:flex-start}.color-palate.svelte-shsgqa span.svelte-shsgqa{margin:4px}");
 }
 
-// (73:0) {:else}
+// (72:0) {:else}
 function create_else_block(ctx) {
 	let main;
 	let empty_1;
@@ -2990,7 +2990,7 @@ function create_else_block(ctx) {
 	};
 }
 
-// (51:0) {#if hasSelected}
+// (50:0) {#if hasSelected}
 function create_if_block(ctx) {
 	let main;
 	let h1;
@@ -3195,12 +3195,10 @@ function create_fragment(ctx) {
 	};
 }
 
-let msg = "Hello World!";
-
 function instance($$self, $$props, $$invalidate) {
 	let hasSelected = false;
 	let themes = 'light';
-	let _hsl = _common_variables__WEBPACK_IMPORTED_MODULE_3__["hsl"];
+	let _hsl = JSON.parse(JSON.stringify(_common_variables__WEBPACK_IMPORTED_MODULE_3__["hsl"]));
 
 	// 监听图层选择情况
 	Object(_common_events__WEBPACK_IMPORTED_MODULE_4__["on"])("SELECTION_CHANGED", hasSelection => {
@@ -3451,9 +3449,9 @@ const variables = {
         height: 440
     },
     hsl: {
-        h: 20,
-        s: 30,
-        l: 23
+        h: 0,
+        s: 100,
+        l: 50
     }
 }
 

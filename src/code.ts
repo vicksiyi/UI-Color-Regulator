@@ -21,9 +21,10 @@ on<ChangeGuiSizeHandler>("CHANGE_GUI_SIZE", (guiSize) => {
 
 // 监听图层选择事件
 jsDesign.on('selectionchange', function () {
+    let selection = jsDesign.currentPage.selection;
     // 向GUI 界面发送消息【已选择图层】
     emit<SelectionChangedHandler>(
         'SELECTION_CHANGED',
-        jsDesign.currentPage.selection.length > 0
+        selection.length > 0
     );
 })

@@ -6,10 +6,9 @@
   import { updateGuiSize, toast } from "./common/global";
   import { onMount } from "svelte";
 
-  let msg = "Hello World!"
   let hasSelected = false;
   let themes = 'light';
-  let _hsl = hsl;
+  let _hsl = JSON.parse(JSON.stringify(hsl));
 
   // 监听图层选择情况
   on("SELECTION_CHANGED", (hasSelection) => {

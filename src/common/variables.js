@@ -8,9 +8,9 @@ const variables = {
         height: 440
     },
     hsl: {
-        h: 20,
-        s: 30,
-        l: 23
+        h: 0,
+        s: 100,
+        l: 50
     }
 }
 
