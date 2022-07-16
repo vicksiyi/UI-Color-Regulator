@@ -1,5 +1,6 @@
 <script>
     export let hsl = {h:0,s:0,l:0};
+    let hasMouseDown = false;
 </script>
 
 <div class="hsl">
@@ -21,6 +22,14 @@
           <span
             class="color"
             style="background-color: hsl({index},100%,50%);"
+            on:mousedown={() => {
+              hasMouseDown = true;
+              hsl.h = index;
+            }}
+            on:mouseup={() => (hasMouseDown = false)}
+            on:mousemove={() => {
+              if (hasMouseDown) hsl.h = index;
+            }}
           />
         </div>
       {/each}
@@ -33,7 +42,7 @@
         <div>
           <span
             class="pointer"
-            style="visibility: {index === hsl.h ? 'visible' : 'hidden'};"
+            style="visibility: {index === hsl.s ? 'visible' : 'hidden'};"
           >
             <div class="pointer-content">
               <span class="num">{hsl.s}</span>
@@ -42,7 +51,15 @@
           </span>
           <span
             class="color"
-            style="background-color: hsl({hsl.h},{index}%,{hsl.l}%);"
+            style="background-color: hsl({hsl.h},{index}%,50%);"
+            on:mousedown={() => {
+              hasMouseDown = true;
+              hsl.s = index;
+            }}
+            on:mouseup={() => (hasMouseDown = false)}
+            on:mousemove={() => {
+              if (hasMouseDown) hsl.s = index;
+            }}
           />
         </div>
       {/each}
@@ -55,7 +72,7 @@
         <div>
           <span
             class="pointer"
-            style="visibility: {index === hsl.h ? 'visible' : 'hidden'};"
+            style="visibility: {index === hsl.l ? 'visible' : 'hidden'};"
           >
             <div class="pointer-content">
               <span class="num">{hsl.l}</span>
@@ -64,7 +81,15 @@
           </span>
           <span
             class="color"
-            style="background-color: hsl({hsl.h},{hsl.s}%,{index}%);"
+            style="background-color: hsl({hsl.h},100%,{index}%);"
+            on:mousedown={() => {
+              hasMouseDown = true;
+              hsl.l = index;
+            }}
+            on:mouseup={() => (hasMouseDown = false)}
+            on:mousemove={() => {
+              if (hasMouseDown) hsl.l = index;
+            }}
           />
         </div>
       {/each}

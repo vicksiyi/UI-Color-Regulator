@@ -56,7 +56,7 @@
     <div class="color-detail">
       <div
         class="color-palate"
-        style="background-color: hsl({hsl.h},{hsl.s}%,{hsl.l}%);"
+        style="background-color: hsl({_hsl.h},{_hsl.s}%,{_hsl.l}%);"
       >
         <span>文字颜色</span>
         <span>文字颜色</span>
