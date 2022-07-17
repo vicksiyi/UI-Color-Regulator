@@ -12,13 +12,13 @@ import {
 } from "./common/types";
 
 // 支持的画布类型
-const SupportNode = ['FRAME', 'RECTANGLE', 'ELLIPSE', 'LINE', 'POLYGON', 'STAR', 'TEXT'];
+const SupportNode = ['FRAME', 'RECTANGLE', 'ELLIPSE', 'LINE', 'POLYGON', 'STAR'];
 // 存在子节点的节点
 const hasChildrenNode = ['FRAME', 'GROUP'];
 // 需要加载的字体
 const loadFonts: FontName[] = [];
 // 节点选取处理器
-const selectNode = (): SupportElementNode => {
+const selectNode = (): SupportElementNode | undefined => {
     let selections = jsDesign.currentPage.selection;
     let selection;
     for (let node of selections) {
@@ -65,7 +65,9 @@ const selectChangedHandler = () => {
             if (item.type === 'SOLID') fillColor = item.color;
         }
         let fonts: FontStyle[] = [];
-        getTextNode((selection as HasChildrenNode).children as SceneNode[], fonts);
+        if (hasChildrenNode.includes(selection.type)) {
+            getTextNode((selection as HasChildrenNode).children as SceneNode[], fonts);
+        }
         (async () => {
             try {
                 for (let item of loadFonts) {
@@ -75,7 +77,6 @@ const selectChangedHandler = () => {
                 console.error(err);
             }
         })()
-        console.log(fonts);
         if (fillColor) {
             emit<UpdateColorHandler>(
                 'UPDATE_COLOR',

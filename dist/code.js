@@ -99,7 +99,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _common_convertColor__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./common/convertColor */ "./src/common/convertColor.js");
 
 
-const SupportNode = ['FRAME', 'RECTANGLE', 'ELLIPSE', 'LINE', 'POLYGON', 'STAR', 'TEXT'];
+const SupportNode = ['FRAME', 'RECTANGLE', 'ELLIPSE', 'LINE', 'POLYGON', 'STAR'];
 const hasChildrenNode = ['FRAME', 'GROUP'];
 const loadFonts = [];
 const selectNode = () => {
@@ -145,7 +145,9 @@ const selectChangedHandler = () => {
                 fillColor = item.color;
         }
         let fonts = [];
-        getTextNode(selection.children, fonts);
+        if (hasChildrenNode.includes(selection.type)) {
+            getTextNode(selection.children, fonts);
+        }
         (async () => {
             try {
                 for (let item of loadFonts) {
@@ -156,7 +158,6 @@ const selectChangedHandler = () => {
                 console.error(err);
             }
         })();
-        console.log(fonts);
         if (fillColor) {
             Object(_common_events__WEBPACK_IMPORTED_MODULE_0__["emit"])('UPDATE_COLOR', {
                 color: Object(_common_convertColor__WEBPACK_IMPORTED_MODULE_1__["RGBToHSL"])(Object(_common_convertColor__WEBPACK_IMPORTED_MODULE_1__["jsDesignRGBToRGB"])(fillColor)),

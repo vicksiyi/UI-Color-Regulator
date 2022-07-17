@@ -76,16 +76,20 @@
         class="color-palate"
         style="background-color: hsl({_hsl.h},{_hsl.s}%,{_hsl.l}%);"
       >
-        {#each _fonts as _text}
-          <span
-            style="
-            font-size:{_text.fontSize};
-            color:{_text.color};
-            font-family:'{_text.fontFamily.family}';"
-          >
-            {_text.content}
-          </span>
-        {/each}
+        {#if _fonts.length}
+          {#each _fonts as _text}
+            <span
+              style="
+          font-size:{_text.fontSize};
+          color:{_text.color};
+          font-family:'{_text.fontFamily.family}';"
+            >
+              {_text.content}
+            </span>
+          {/each}
+        {:else}
+          <span>文字颜色</span>
+        {/if}
       </div>
     </div>
     <!-- 颜色调节器 -->
