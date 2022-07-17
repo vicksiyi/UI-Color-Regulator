@@ -2960,10 +2960,10 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function add_css(target) {
-	Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append_styles"])(target, "svelte-1523e0s", "main.svelte-1523e0s.svelte-1523e0s{overflow:hidden;padding:0 16px 16px 16px}h1.svelte-1523e0s.svelte-1523e0s{font-size:12px;font-weight:500;color:rgba(32, 32, 32, 0.8)}.jsdesign-dark h1.svelte-1523e0s.svelte-1523e0s{color:rgba(255, 255, 255, 0.9)}.color-detail.svelte-1523e0s.svelte-1523e0s{display:flex;justify-content:space-around}.color-detail.svelte-1523e0s>div.svelte-1523e0s{border-radius:2px}.color-palate.svelte-1523e0s.svelte-1523e0s{flex:1;padding:4px 8px;color:#fff;display:flex;flex-wrap:wrap;justify-content:flex-start;box-shadow:0 2px 12px 0 rgba(0, 0, 0, 0.1)}.color-palate.svelte-1523e0s span.svelte-1523e0s{margin:4px}footer.svelte-1523e0s.svelte-1523e0s{width:auto;display:flex;justify-content:flex-end}.btn.svelte-1523e0s.svelte-1523e0s{padding:8px 16px;border-radius:4px}.btn.svelte-1523e0s.svelte-1523e0s:first-child{margin-right:12px}");
+	Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append_styles"])(target, "svelte-18oq7hy", "main.svelte-18oq7hy.svelte-18oq7hy{overflow:hidden;padding:0 16px 16px 16px}.color-detail.svelte-18oq7hy.svelte-18oq7hy{display:flex;justify-content:space-around}.color-detail.svelte-18oq7hy>div.svelte-18oq7hy{border-radius:2px}.color-palate.svelte-18oq7hy.svelte-18oq7hy{flex:1;padding:4px 8px;color:#fff;display:flex;flex-wrap:wrap;justify-content:flex-start;box-shadow:0 2px 12px 0 rgba(0, 0, 0, 0.1);margin-top:12px;min-height:22px}.color-palate.svelte-18oq7hy span.svelte-18oq7hy{margin:4px}footer.svelte-18oq7hy.svelte-18oq7hy{width:auto;display:flex;justify-content:flex-end}.btn.svelte-18oq7hy.svelte-18oq7hy{padding:8px 16px;border-radius:4px}.btn.svelte-18oq7hy.svelte-18oq7hy:first-child{margin-right:12px}");
 }
 
-// (102:0) {:else}
+// (96:0) {:else}
 function create_else_block(ctx) {
 	let main;
 	let empty_1;
@@ -2981,7 +2981,7 @@ function create_else_block(ctx) {
 			main = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("main");
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["create_component"])(empty_1.$$.fragment);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(main, "id", "main");
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(main, "class", "svelte-1523e0s");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(main, "class", "svelte-18oq7hy");
 		},
 		m(target, anchor) {
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, main, anchor);
@@ -3012,32 +3012,22 @@ function create_else_block(ctx) {
 // (67:0) {#if hasSelected}
 function create_if_block(ctx) {
 	let main;
-	let h1;
-	let t1;
 	let div1;
 	let div0;
 	let span0;
-	let t3;
+	let t1;
 	let span1;
-	let t5;
+	let t3;
 	let span2;
-	let t7;
-	let span3;
-	let t9;
-	let span4;
-	let t11;
-	let span5;
-	let t13;
-	let span6;
-	let t15;
+	let t5;
 	let hsl_1;
 	let updating_hsl;
-	let t16;
+	let t6;
 	let footer;
 	let button0;
-	let t18;
+	let t8;
 	let button1;
-	let t20;
+	let t10;
 	let div2;
 	let current;
 	let mounted;
@@ -3059,86 +3049,56 @@ function create_if_block(ctx) {
 	return {
 		c() {
 			main = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("main");
-			h1 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("h1");
-			h1.textContent = "HSL调节器";
-			t1 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
 			div1 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("div");
 			div0 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("div");
 			span0 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("span");
 			span0.textContent = "文字颜色";
-			t3 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
+			t1 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
 			span1 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("span");
 			span1.textContent = "文字颜色";
-			t5 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
+			t3 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
 			span2 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("span");
 			span2.textContent = "文字颜色";
-			t7 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
-			span3 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("span");
-			span3.textContent = "文字颜色";
-			t9 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
-			span4 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("span");
-			span4.textContent = "文字颜色";
-			t11 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
-			span5 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("span");
-			span5.textContent = "文字颜色";
-			t13 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
-			span6 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("span");
-			span6.textContent = "文字颜色";
-			t15 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
+			t5 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["create_component"])(hsl_1.$$.fragment);
-			t16 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
+			t6 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
 			footer = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("footer");
 			button0 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("button");
 			button0.textContent = "重置";
-			t18 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
+			t8 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
 			button1 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("button");
 			button1.textContent = "应用至画布";
-			t20 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
+			t10 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
 			div2 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("div");
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(h1, "class", "svelte-1523e0s");
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(span0, "class", "svelte-1523e0s");
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(span1, "class", "svelte-1523e0s");
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(span2, "class", "svelte-1523e0s");
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(span3, "class", "svelte-1523e0s");
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(span4, "class", "svelte-1523e0s");
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(span5, "class", "svelte-1523e0s");
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(span6, "class", "svelte-1523e0s");
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(div0, "class", "color-palate svelte-1523e0s");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(span0, "class", "svelte-18oq7hy");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(span1, "class", "svelte-18oq7hy");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(span2, "class", "svelte-18oq7hy");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(div0, "class", "color-palate svelte-18oq7hy");
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_style"])(div0, "background-color", "hsl(" + /*_hsl*/ ctx[2].h + "," + /*_hsl*/ ctx[2].s + "%," + /*_hsl*/ ctx[2].l + "%)");
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(div1, "class", "color-detail svelte-1523e0s");
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(button0, "class", "btn js-design-master js-design-second-button svelte-1523e0s");
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(button1, "class", "btn js-design-master js-design-master-button svelte-1523e0s");
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(footer, "class", "svelte-1523e0s");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(div1, "class", "color-detail svelte-18oq7hy");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(button0, "class", "btn js-design-master js-design-second-button svelte-18oq7hy");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(button1, "class", "btn js-design-master js-design-master-button svelte-18oq7hy");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(footer, "class", "svelte-18oq7hy");
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(main, "id", "main");
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(main, "class", "svelte-1523e0s");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(main, "class", "svelte-18oq7hy");
 		},
 		m(target, anchor) {
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, main, anchor);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(main, h1);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(main, t1);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(main, div1);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div1, div0);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div0, span0);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div0, t3);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div0, t1);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div0, span1);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div0, t5);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div0, t3);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div0, span2);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div0, t7);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div0, span3);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div0, t9);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div0, span4);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div0, t11);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div0, span5);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div0, t13);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div0, span6);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(main, t15);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(main, t5);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["mount_component"])(hsl_1, main, null);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(main, t16);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(main, t6);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(main, footer);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(footer, button0);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(footer, t18);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(footer, t8);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(footer, button1);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(main, t20);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(main, t10);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(main, div2);
 			current = true;
 
@@ -3436,7 +3396,7 @@ const variables = {
     },
     guiSize: {
         width: 440,
-        height: 311
+        height: 294
     },
     hsl: {
         h: 0,
@@ -3446,6 +3406,240 @@ const variables = {
 }
 
 module.exports = variables;
+
+/***/ }),
+
+/***/ "./src/components/ColorGradient.svelte":
+/*!*********************************************!*\
+  !*** ./src/components/ColorGradient.svelte ***!
+  \*********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var svelte_internal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! svelte/internal */ "./node_modules/svelte/internal/index.mjs");
+/* src/components/ColorGradient.svelte generated by Svelte v3.48.0 */
+
+
+function add_css(target) {
+	Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append_styles"])(target, "svelte-1trsfha", ".color-gradient.svelte-1trsfha.svelte-1trsfha{display:flex;flex:1;margin-left:8px;height:22px;position:relative;cursor:pointer}.color-gradient.svelte-1trsfha>div.svelte-1trsfha{display:flex;flex:1;position:relative}.color-gradient.svelte-1trsfha span.pointer.svelte-1trsfha{position:absolute;top:-14px;text-align:center}.pointer-content.svelte-1trsfha.svelte-1trsfha{position:relative}.pointer-content.svelte-1trsfha.svelte-1trsfha::before{position:absolute;content:\"\";top:10px;left:-4px;border-left:4px solid transparent;border-right:4px solid transparent;border-top:4px solid #cccccc}.color-gradient.svelte-1trsfha span.pointer .num.svelte-1trsfha{background-color:#ffffff;border:1px solid #cccccc;width:24px;padding:2px 4px;position:absolute;text-align:center;top:-9px;left:-17px;color:rgba(32, 32, 32, 0.8);font-size:12px;border-radius:4px}");
+}
+
+function get_each_context(ctx, list, i) {
+	const child_ctx = ctx.slice();
+	child_ctx[4] = list[i];
+	child_ctx[6] = i;
+	return child_ctx;
+}
+
+const get_color_slot_changes = dirty => ({});
+const get_color_slot_context = ctx => ({ index: /*index*/ ctx[6] });
+
+// (7:2) {#each new Array(total) as _, index}
+function create_each_block(ctx) {
+	let div1;
+	let span1;
+	let div0;
+	let span0;
+	let t0_value = parseInt(/*hslNum*/ ctx[1]) + "";
+	let t0;
+	let t1;
+	let i;
+	let t2;
+	let t3;
+	let current;
+	const color_slot_template = /*#slots*/ ctx[3].color;
+	const color_slot = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["create_slot"])(color_slot_template, ctx, /*$$scope*/ ctx[2], get_color_slot_context);
+
+	return {
+		c() {
+			div1 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("div");
+			span1 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("span");
+			div0 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("div");
+			span0 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("span");
+			t0 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["text"])(t0_value);
+			t1 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
+			i = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("i");
+			t2 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
+			if (color_slot) color_slot.c();
+			t3 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(span0, "class", "num svelte-1trsfha");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(i, "class", "pointer-down");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(div0, "class", "pointer-content svelte-1trsfha");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(span1, "class", "pointer svelte-1trsfha");
+
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_style"])(span1, "visibility", /*index*/ ctx[6] === parseInt(/*hslNum*/ ctx[1])
+			? 'visible'
+			: 'hidden');
+
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(div1, "class", "svelte-1trsfha");
+		},
+		m(target, anchor) {
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, div1, anchor);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div1, span1);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(span1, div0);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div0, span0);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(span0, t0);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div0, t1);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div0, i);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div1, t2);
+
+			if (color_slot) {
+				color_slot.m(div1, null);
+			}
+
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div1, t3);
+			current = true;
+		},
+		p(ctx, dirty) {
+			if ((!current || dirty & /*hslNum*/ 2) && t0_value !== (t0_value = parseInt(/*hslNum*/ ctx[1]) + "")) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_data"])(t0, t0_value);
+
+			if (!current || dirty & /*hslNum*/ 2) {
+				Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_style"])(span1, "visibility", /*index*/ ctx[6] === parseInt(/*hslNum*/ ctx[1])
+				? 'visible'
+				: 'hidden');
+			}
+
+			if (color_slot) {
+				if (color_slot.p && (!current || dirty & /*$$scope*/ 4)) {
+					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["update_slot_base"])(
+						color_slot,
+						color_slot_template,
+						ctx,
+						/*$$scope*/ ctx[2],
+						!current
+						? Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["get_all_dirty_from_scope"])(/*$$scope*/ ctx[2])
+						: Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["get_slot_changes"])(color_slot_template, /*$$scope*/ ctx[2], dirty, get_color_slot_changes),
+						get_color_slot_context
+					);
+				}
+			}
+		},
+		i(local) {
+			if (current) return;
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_in"])(color_slot, local);
+			current = true;
+		},
+		o(local) {
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_out"])(color_slot, local);
+			current = false;
+		},
+		d(detaching) {
+			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(div1);
+			if (color_slot) color_slot.d(detaching);
+		}
+	};
+}
+
+function create_fragment(ctx) {
+	let div;
+	let current;
+	let each_value = new Array(/*total*/ ctx[0]);
+	let each_blocks = [];
+
+	for (let i = 0; i < each_value.length; i += 1) {
+		each_blocks[i] = create_each_block(get_each_context(ctx, each_value, i));
+	}
+
+	const out = i => Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_out"])(each_blocks[i], 1, 1, () => {
+		each_blocks[i] = null;
+	});
+
+	return {
+		c() {
+			div = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("div");
+
+			for (let i = 0; i < each_blocks.length; i += 1) {
+				each_blocks[i].c();
+			}
+
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(div, "class", "color-gradient svelte-1trsfha");
+		},
+		m(target, anchor) {
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, div, anchor);
+
+			for (let i = 0; i < each_blocks.length; i += 1) {
+				each_blocks[i].m(div, null);
+			}
+
+			current = true;
+		},
+		p(ctx, [dirty]) {
+			if (dirty & /*$$scope, parseInt, hslNum, total*/ 7) {
+				each_value = new Array(/*total*/ ctx[0]);
+				let i;
+
+				for (i = 0; i < each_value.length; i += 1) {
+					const child_ctx = get_each_context(ctx, each_value, i);
+
+					if (each_blocks[i]) {
+						each_blocks[i].p(child_ctx, dirty);
+						Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_in"])(each_blocks[i], 1);
+					} else {
+						each_blocks[i] = create_each_block(child_ctx);
+						each_blocks[i].c();
+						Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_in"])(each_blocks[i], 1);
+						each_blocks[i].m(div, null);
+					}
+				}
+
+				Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["group_outros"])();
+
+				for (i = each_value.length; i < each_blocks.length; i += 1) {
+					out(i);
+				}
+
+				Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["check_outros"])();
+			}
+		},
+		i(local) {
+			if (current) return;
+
+			for (let i = 0; i < each_value.length; i += 1) {
+				Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_in"])(each_blocks[i]);
+			}
+
+			current = true;
+		},
+		o(local) {
+			each_blocks = each_blocks.filter(Boolean);
+
+			for (let i = 0; i < each_blocks.length; i += 1) {
+				Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_out"])(each_blocks[i]);
+			}
+
+			current = false;
+		},
+		d(detaching) {
+			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(div);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["destroy_each"])(each_blocks, detaching);
+		}
+	};
+}
+
+function instance($$self, $$props, $$invalidate) {
+	let { $$slots: slots = {}, $$scope } = $$props;
+	let { total = 0 } = $$props;
+	let { hslNum = 0 } = $$props;
+
+	$$self.$$set = $$props => {
+		if ('total' in $$props) $$invalidate(0, total = $$props.total);
+		if ('hslNum' in $$props) $$invalidate(1, hslNum = $$props.hslNum);
+		if ('$$scope' in $$props) $$invalidate(2, $$scope = $$props.$$scope);
+	};
+
+	return [total, hslNum, $$scope, slots];
+}
+
+class ColorGradient extends svelte_internal__WEBPACK_IMPORTED_MODULE_0__["SvelteComponent"] {
+	constructor(options) {
+		super();
+		Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["init"])(this, options, instance, create_fragment, svelte_internal__WEBPACK_IMPORTED_MODULE_0__["safe_not_equal"], { total: 0, hslNum: 1 }, add_css);
+	}
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (ColorGradient);
 
 /***/ }),
 
@@ -3545,100 +3739,45 @@ class Empty extends svelte_internal__WEBPACK_IMPORTED_MODULE_0__["SvelteComponen
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var svelte_internal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! svelte/internal */ "./node_modules/svelte/internal/index.mjs");
+/* harmony import */ var _ColorGradient_svelte__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ColorGradient.svelte */ "./src/components/ColorGradient.svelte");
 /* src/components/Hsl.svelte generated by Svelte v3.48.0 */
 
 
+
+
 function add_css(target) {
-	Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append_styles"])(target, "svelte-zpvkoo", ".hsl.svelte-zpvkoo.svelte-zpvkoo{margin-top:20px}.color-regulator.svelte-zpvkoo.svelte-zpvkoo{display:flex;height:50px;align-items:center}.color-regulator.svelte-zpvkoo>span.svelte-zpvkoo{color:rgba(32, 32, 32, 0.8);font-size:16px}.jsdesign-dark .color-regulator.svelte-zpvkoo>span.svelte-zpvkoo{color:rgba(255, 255, 255, 0.9);font-size:16px}.color-gradient.svelte-zpvkoo.svelte-zpvkoo{display:flex;flex:1;margin-left:8px;height:22px;position:relative}.color-gradient.svelte-zpvkoo>div.svelte-zpvkoo{display:flex;flex:1;position:relative}.color-gradient.svelte-zpvkoo span.color.svelte-zpvkoo{flex:1}.color-gradient.svelte-zpvkoo span.pointer.svelte-zpvkoo{position:absolute;top:-14px;text-align:center}.pointer-content.svelte-zpvkoo.svelte-zpvkoo{position:relative}.pointer-content.svelte-zpvkoo.svelte-zpvkoo::before{position:absolute;content:\"\";top:10px;left:-4px;border-left:4px solid transparent;border-right:4px solid transparent;border-top:4px solid #cccccc}.color-gradient.svelte-zpvkoo span.pointer .num.svelte-zpvkoo{background-color:#ffffff;border:1px solid #cccccc;width:24px;padding:2px 4px;position:absolute;text-align:center;top:-9px;left:-17px;color:rgba(32, 32, 32, 0.8);font-size:12px;border-radius:4px}");
+	Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append_styles"])(target, "svelte-1taflvo", ".hsl.svelte-1taflvo.svelte-1taflvo{margin-top:20px}.color-regulator.svelte-1taflvo.svelte-1taflvo{display:flex;height:50px;align-items:center}.color-regulator.svelte-1taflvo span.color.svelte-1taflvo{flex:1}.color-regulator.svelte-1taflvo>span.svelte-1taflvo{color:rgba(32, 32, 32, 0.8);font-size:16px}.jsdesign-dark .color-regulator.svelte-1taflvo>span.svelte-1taflvo{color:rgba(255, 255, 255, 0.9);font-size:16px}");
 }
 
-function get_each_context(ctx, list, i) {
-	const child_ctx = ctx.slice();
-	child_ctx[11] = list[i];
-	child_ctx[13] = i;
-	return child_ctx;
-}
-
-function get_each_context_1(ctx, list, i) {
-	const child_ctx = ctx.slice();
-	child_ctx[11] = list[i];
-	child_ctx[13] = i;
-	return child_ctx;
-}
-
-function get_each_context_2(ctx, list, i) {
-	const child_ctx = ctx.slice();
-	child_ctx[11] = list[i];
-	child_ctx[13] = i;
-	return child_ctx;
-}
-
-// (11:6) {#each new Array(361) as _, index}
-function create_each_block_2(ctx) {
-	let div1;
-	let span1;
-	let div0;
-	let span0;
-	let t0_value = parseInt(/*hsl*/ ctx[0].h) + "";
-	let t0;
-	let t1;
-	let i;
-	let t2;
-	let span2;
-	let t3;
+// (12:6) 
+function create_color_slot_2(ctx) {
+	let span;
 	let mounted;
 	let dispose;
 
 	function mousedown_handler() {
-		return /*mousedown_handler*/ ctx[2](/*index*/ ctx[13]);
+		return /*mousedown_handler*/ ctx[2](/*index*/ ctx[17]);
 	}
 
 	function mousemove_handler() {
-		return /*mousemove_handler*/ ctx[4](/*index*/ ctx[13]);
+		return /*mousemove_handler*/ ctx[4](/*index*/ ctx[17]);
 	}
 
 	return {
 		c() {
-			div1 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("div");
-			span1 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("span");
-			div0 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("div");
-			span0 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("span");
-			t0 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["text"])(t0_value);
-			t1 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
-			i = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("i");
-			t2 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
-			span2 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("span");
-			t3 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(span0, "class", "num svelte-zpvkoo");
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(i, "class", "pointer-down");
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(div0, "class", "pointer-content svelte-zpvkoo");
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(span1, "class", "pointer svelte-zpvkoo");
-
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_style"])(span1, "visibility", /*index*/ ctx[13] === parseInt(/*hsl*/ ctx[0].h)
-			? 'visible'
-			: 'hidden');
-
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(span2, "class", "color svelte-zpvkoo");
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_style"])(span2, "background-color", "hsl(" + /*index*/ ctx[13] + ",100%,50%)");
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(div1, "class", "svelte-zpvkoo");
+			span = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("span");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(span, "slot", "color");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(span, "class", "color svelte-1taflvo");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_style"])(span, "background-color", "hsl(" + /*index*/ ctx[17] + ",100%,50%)");
 		},
 		m(target, anchor) {
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, div1, anchor);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div1, span1);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(span1, div0);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div0, span0);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(span0, t0);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div0, t1);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div0, i);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div1, t2);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div1, span2);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div1, t3);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, span, anchor);
 
 			if (!mounted) {
 				dispose = [
-					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["listen"])(span2, "mousedown", mousedown_handler),
-					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["listen"])(span2, "mouseup", /*mouseup_handler*/ ctx[3]),
-					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["listen"])(span2, "mousemove", mousemove_handler)
+					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["listen"])(span, "mousedown", mousedown_handler),
+					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["listen"])(span, "mouseup", /*mouseup_handler*/ ctx[3]),
+					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["listen"])(span, "mousemove", mousemove_handler)
 				];
 
 				mounted = true;
@@ -3646,88 +3785,48 @@ function create_each_block_2(ctx) {
 		},
 		p(new_ctx, dirty) {
 			ctx = new_ctx;
-			if (dirty & /*hsl*/ 1 && t0_value !== (t0_value = parseInt(/*hsl*/ ctx[0].h) + "")) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_data"])(t0, t0_value);
 
-			if (dirty & /*hsl*/ 1) {
-				Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_style"])(span1, "visibility", /*index*/ ctx[13] === parseInt(/*hsl*/ ctx[0].h)
-				? 'visible'
-				: 'hidden');
+			if (dirty & /*index*/ 131072) {
+				Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_style"])(span, "background-color", "hsl(" + /*index*/ ctx[17] + ",100%,50%)");
 			}
 		},
 		d(detaching) {
-			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(div1);
+			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(span);
 			mounted = false;
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["run_all"])(dispose);
 		}
 	};
 }
 
-// (43:6) {#each new Array(101) as _, index}
-function create_each_block_1(ctx) {
-	let div1;
-	let span1;
-	let div0;
-	let span0;
-	let t0_value = parseInt(/*hsl*/ ctx[0].s) + "";
-	let t0;
-	let t1;
-	let i;
-	let t2;
-	let span2;
-	let t3;
+// (30:6) 
+function create_color_slot_1(ctx) {
+	let span;
 	let mounted;
 	let dispose;
 
 	function mousedown_handler_1() {
-		return /*mousedown_handler_1*/ ctx[5](/*index*/ ctx[13]);
+		return /*mousedown_handler_1*/ ctx[7](/*index*/ ctx[17]);
 	}
 
 	function mousemove_handler_1() {
-		return /*mousemove_handler_1*/ ctx[7](/*index*/ ctx[13]);
+		return /*mousemove_handler_1*/ ctx[9](/*index*/ ctx[17]);
 	}
 
 	return {
 		c() {
-			div1 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("div");
-			span1 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("span");
-			div0 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("div");
-			span0 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("span");
-			t0 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["text"])(t0_value);
-			t1 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
-			i = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("i");
-			t2 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
-			span2 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("span");
-			t3 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(span0, "class", "num svelte-zpvkoo");
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(i, "class", "pointer-down");
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(div0, "class", "pointer-content svelte-zpvkoo");
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(span1, "class", "pointer svelte-zpvkoo");
-
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_style"])(span1, "visibility", /*index*/ ctx[13] === parseInt(/*hsl*/ ctx[0].s)
-			? 'visible'
-			: 'hidden');
-
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(span2, "class", "color svelte-zpvkoo");
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_style"])(span2, "background-color", "hsl(" + /*hsl*/ ctx[0].h + "," + /*index*/ ctx[13] + "%,50%)");
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(div1, "class", "svelte-zpvkoo");
+			span = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("span");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(span, "slot", "color");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(span, "class", "color svelte-1taflvo");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_style"])(span, "background-color", "hsl(" + /*hsl*/ ctx[0].h + "," + /*index*/ ctx[17] + "%,50%)");
 		},
 		m(target, anchor) {
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, div1, anchor);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div1, span1);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(span1, div0);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div0, span0);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(span0, t0);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div0, t1);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div0, i);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div1, t2);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div1, span2);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div1, t3);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, span, anchor);
 
 			if (!mounted) {
 				dispose = [
-					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["listen"])(span2, "mousedown", mousedown_handler_1),
-					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["listen"])(span2, "mouseup", /*mouseup_handler_1*/ ctx[6]),
-					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["listen"])(span2, "mousemove", mousemove_handler_1)
+					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["listen"])(span, "mousedown", mousedown_handler_1),
+					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["listen"])(span, "mouseup", /*mouseup_handler_1*/ ctx[8]),
+					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["listen"])(span, "mousemove", mousemove_handler_1)
 				];
 
 				mounted = true;
@@ -3735,92 +3834,48 @@ function create_each_block_1(ctx) {
 		},
 		p(new_ctx, dirty) {
 			ctx = new_ctx;
-			if (dirty & /*hsl*/ 1 && t0_value !== (t0_value = parseInt(/*hsl*/ ctx[0].s) + "")) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_data"])(t0, t0_value);
 
-			if (dirty & /*hsl*/ 1) {
-				Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_style"])(span1, "visibility", /*index*/ ctx[13] === parseInt(/*hsl*/ ctx[0].s)
-				? 'visible'
-				: 'hidden');
-			}
-
-			if (dirty & /*hsl*/ 1) {
-				Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_style"])(span2, "background-color", "hsl(" + /*hsl*/ ctx[0].h + "," + /*index*/ ctx[13] + "%,50%)");
+			if (dirty & /*hsl, index*/ 131073) {
+				Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_style"])(span, "background-color", "hsl(" + /*hsl*/ ctx[0].h + "," + /*index*/ ctx[17] + "%,50%)");
 			}
 		},
 		d(detaching) {
-			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(div1);
+			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(span);
 			mounted = false;
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["run_all"])(dispose);
 		}
 	};
 }
 
-// (75:6) {#each new Array(101) as _, index}
-function create_each_block(ctx) {
-	let div1;
-	let span1;
-	let div0;
-	let span0;
-	let t0_value = parseInt(/*hsl*/ ctx[0].l) + "";
-	let t0;
-	let t1;
-	let i;
-	let t2;
-	let span2;
-	let t3;
+// (48:6) 
+function create_color_slot(ctx) {
+	let span;
 	let mounted;
 	let dispose;
 
 	function mousedown_handler_2() {
-		return /*mousedown_handler_2*/ ctx[8](/*index*/ ctx[13]);
+		return /*mousedown_handler_2*/ ctx[12](/*index*/ ctx[17]);
 	}
 
 	function mousemove_handler_2() {
-		return /*mousemove_handler_2*/ ctx[10](/*index*/ ctx[13]);
+		return /*mousemove_handler_2*/ ctx[14](/*index*/ ctx[17]);
 	}
 
 	return {
 		c() {
-			div1 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("div");
-			span1 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("span");
-			div0 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("div");
-			span0 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("span");
-			t0 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["text"])(t0_value);
-			t1 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
-			i = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("i");
-			t2 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
-			span2 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("span");
-			t3 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(span0, "class", "num svelte-zpvkoo");
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(i, "class", "pointer-down");
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(div0, "class", "pointer-content svelte-zpvkoo");
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(span1, "class", "pointer svelte-zpvkoo");
-
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_style"])(span1, "visibility", /*index*/ ctx[13] === parseInt(/*hsl*/ ctx[0].l)
-			? 'visible'
-			: 'hidden');
-
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(span2, "class", "color svelte-zpvkoo");
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_style"])(span2, "background-color", "hsl(" + /*hsl*/ ctx[0].h + ",100%," + /*index*/ ctx[13] + "%)");
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(div1, "class", "svelte-zpvkoo");
+			span = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("span");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(span, "slot", "color");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(span, "class", "color svelte-1taflvo");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_style"])(span, "background-color", "hsl(" + /*hsl*/ ctx[0].h + ",100%," + /*index*/ ctx[17] + "%)");
 		},
 		m(target, anchor) {
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, div1, anchor);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div1, span1);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(span1, div0);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div0, span0);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(span0, t0);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div0, t1);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div0, i);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div1, t2);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div1, span2);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div1, t3);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, span, anchor);
 
 			if (!mounted) {
 				dispose = [
-					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["listen"])(span2, "mousedown", mousedown_handler_2),
-					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["listen"])(span2, "mouseup", /*mouseup_handler_2*/ ctx[9]),
-					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["listen"])(span2, "mousemove", mousemove_handler_2)
+					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["listen"])(span, "mousedown", mousedown_handler_2),
+					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["listen"])(span, "mouseup", /*mouseup_handler_2*/ ctx[13]),
+					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["listen"])(span, "mousemove", mousemove_handler_2)
 				];
 
 				mounted = true;
@@ -3828,20 +3883,13 @@ function create_each_block(ctx) {
 		},
 		p(new_ctx, dirty) {
 			ctx = new_ctx;
-			if (dirty & /*hsl*/ 1 && t0_value !== (t0_value = parseInt(/*hsl*/ ctx[0].l) + "")) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_data"])(t0, t0_value);
 
-			if (dirty & /*hsl*/ 1) {
-				Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_style"])(span1, "visibility", /*index*/ ctx[13] === parseInt(/*hsl*/ ctx[0].l)
-				? 'visible'
-				: 'hidden');
-			}
-
-			if (dirty & /*hsl*/ 1) {
-				Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_style"])(span2, "background-color", "hsl(" + /*hsl*/ ctx[0].h + ",100%," + /*index*/ ctx[13] + "%)");
+			if (dirty & /*hsl, index*/ 131073) {
+				Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_style"])(span, "background-color", "hsl(" + /*hsl*/ ctx[0].h + ",100%," + /*index*/ ctx[17] + "%)");
 			}
 		},
 		d(detaching) {
-			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(div1);
+			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(span);
 			mounted = false;
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["run_all"])(dispose);
 		}
@@ -3849,196 +3897,214 @@ function create_each_block(ctx) {
 }
 
 function create_fragment(ctx) {
-	let div6;
-	let div1;
+	let div3;
+	let div0;
 	let span0;
 	let t1;
-	let div0;
+	let colorgradient0;
+	let updating_hslNum;
 	let t2;
-	let div3;
+	let div1;
 	let span1;
 	let t4;
-	let div2;
+	let colorgradient1;
+	let updating_hslNum_1;
 	let t5;
-	let div5;
+	let div2;
 	let span2;
 	let t7;
-	let div4;
-	let each_value_2 = new Array(361);
-	let each_blocks_2 = [];
+	let colorgradient2;
+	let updating_hslNum_2;
+	let current;
+	let mounted;
+	let dispose;
 
-	for (let i = 0; i < each_value_2.length; i += 1) {
-		each_blocks_2[i] = create_each_block_2(get_each_context_2(ctx, each_value_2, i));
+	function colorgradient0_hslNum_binding(value) {
+		/*colorgradient0_hslNum_binding*/ ctx[5](value);
 	}
 
-	let each_value_1 = new Array(101);
-	let each_blocks_1 = [];
+	let colorgradient0_props = {
+		total: 361,
+		$$slots: {
+			color: [
+				create_color_slot_2,
+				({ index }) => ({ 17: index }),
+				({ index }) => index ? 131072 : 0
+			]
+		},
+		$$scope: { ctx }
+	};
 
-	for (let i = 0; i < each_value_1.length; i += 1) {
-		each_blocks_1[i] = create_each_block_1(get_each_context_1(ctx, each_value_1, i));
+	if (/*hsl*/ ctx[0].h !== void 0) {
+		colorgradient0_props.hslNum = /*hsl*/ ctx[0].h;
 	}
 
-	let each_value = new Array(101);
-	let each_blocks = [];
+	colorgradient0 = new _ColorGradient_svelte__WEBPACK_IMPORTED_MODULE_1__["default"]({ props: colorgradient0_props });
+	svelte_internal__WEBPACK_IMPORTED_MODULE_0__["binding_callbacks"].push(() => Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["bind"])(colorgradient0, 'hslNum', colorgradient0_hslNum_binding));
 
-	for (let i = 0; i < each_value.length; i += 1) {
-		each_blocks[i] = create_each_block(get_each_context(ctx, each_value, i));
+	function colorgradient1_hslNum_binding(value) {
+		/*colorgradient1_hslNum_binding*/ ctx[10](value);
 	}
+
+	let colorgradient1_props = {
+		total: 101,
+		$$slots: {
+			color: [
+				create_color_slot_1,
+				({ index }) => ({ 17: index }),
+				({ index }) => index ? 131072 : 0
+			]
+		},
+		$$scope: { ctx }
+	};
+
+	if (/*hsl*/ ctx[0].s !== void 0) {
+		colorgradient1_props.hslNum = /*hsl*/ ctx[0].s;
+	}
+
+	colorgradient1 = new _ColorGradient_svelte__WEBPACK_IMPORTED_MODULE_1__["default"]({ props: colorgradient1_props });
+	svelte_internal__WEBPACK_IMPORTED_MODULE_0__["binding_callbacks"].push(() => Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["bind"])(colorgradient1, 'hslNum', colorgradient1_hslNum_binding));
+
+	function colorgradient2_hslNum_binding(value) {
+		/*colorgradient2_hslNum_binding*/ ctx[15](value);
+	}
+
+	let colorgradient2_props = {
+		total: 101,
+		$$slots: {
+			color: [
+				create_color_slot,
+				({ index }) => ({ 17: index }),
+				({ index }) => index ? 131072 : 0
+			]
+		},
+		$$scope: { ctx }
+	};
+
+	if (/*hsl*/ ctx[0].l !== void 0) {
+		colorgradient2_props.hslNum = /*hsl*/ ctx[0].l;
+	}
+
+	colorgradient2 = new _ColorGradient_svelte__WEBPACK_IMPORTED_MODULE_1__["default"]({ props: colorgradient2_props });
+	svelte_internal__WEBPACK_IMPORTED_MODULE_0__["binding_callbacks"].push(() => Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["bind"])(colorgradient2, 'hslNum', colorgradient2_hslNum_binding));
 
 	return {
 		c() {
-			div6 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("div");
-			div1 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("div");
+			div3 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("div");
+			div0 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("div");
 			span0 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("span");
 			span0.textContent = "H:";
 			t1 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
-			div0 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("div");
-
-			for (let i = 0; i < each_blocks_2.length; i += 1) {
-				each_blocks_2[i].c();
-			}
-
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["create_component"])(colorgradient0.$$.fragment);
 			t2 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
-			div3 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("div");
+			div1 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("div");
 			span1 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("span");
 			span1.textContent = "S:";
 			t4 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
-			div2 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("div");
-
-			for (let i = 0; i < each_blocks_1.length; i += 1) {
-				each_blocks_1[i].c();
-			}
-
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["create_component"])(colorgradient1.$$.fragment);
 			t5 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
-			div5 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("div");
+			div2 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("div");
 			span2 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("span");
 			span2.textContent = "L:";
 			t7 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
-			div4 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("div");
-
-			for (let i = 0; i < each_blocks.length; i += 1) {
-				each_blocks[i].c();
-			}
-
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(span0, "class", "svelte-zpvkoo");
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(div0, "class", "color-gradient svelte-zpvkoo");
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(div1, "class", "color-regulator svelte-zpvkoo");
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(span1, "class", "svelte-zpvkoo");
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(div2, "class", "color-gradient svelte-zpvkoo");
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(div3, "class", "color-regulator svelte-zpvkoo");
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(span2, "class", "svelte-zpvkoo");
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(div4, "class", "color-gradient svelte-zpvkoo");
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(div5, "class", "color-regulator svelte-zpvkoo");
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(div6, "class", "hsl svelte-zpvkoo");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["create_component"])(colorgradient2.$$.fragment);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(span0, "class", "svelte-1taflvo");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(div0, "class", "color-regulator svelte-1taflvo");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(span1, "class", "svelte-1taflvo");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(div1, "class", "color-regulator svelte-1taflvo");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(span2, "class", "svelte-1taflvo");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(div2, "class", "color-regulator svelte-1taflvo");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(div3, "class", "hsl svelte-1taflvo");
 		},
 		m(target, anchor) {
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, div6, anchor);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div6, div1);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div1, span0);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div1, t1);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div1, div0);
-
-			for (let i = 0; i < each_blocks_2.length; i += 1) {
-				each_blocks_2[i].m(div0, null);
-			}
-
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div6, t2);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div6, div3);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div3, span1);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div3, t4);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, div3, anchor);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div3, div0);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div0, span0);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div0, t1);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["mount_component"])(colorgradient0, div0, null);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div3, t2);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div3, div1);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div1, span1);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div1, t4);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["mount_component"])(colorgradient1, div1, null);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div3, t5);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div3, div2);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div2, span2);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div2, t7);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["mount_component"])(colorgradient2, div2, null);
+			current = true;
 
-			for (let i = 0; i < each_blocks_1.length; i += 1) {
-				each_blocks_1[i].m(div2, null);
-			}
+			if (!mounted) {
+				dispose = [
+					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["listen"])(div0, "mouseleave", /*mouseleave_handler*/ ctx[6]),
+					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["listen"])(div1, "mouseleave", /*mouseleave_handler_1*/ ctx[11]),
+					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["listen"])(div2, "mouseleave", /*mouseleave_handler_2*/ ctx[16])
+				];
 
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div6, t5);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div6, div5);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div5, span2);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div5, t7);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div5, div4);
-
-			for (let i = 0; i < each_blocks.length; i += 1) {
-				each_blocks[i].m(div4, null);
+				mounted = true;
 			}
 		},
 		p(ctx, [dirty]) {
-			if (dirty & /*hasMouseDown, hsl, parseInt*/ 3) {
-				each_value_2 = new Array(361);
-				let i;
+			const colorgradient0_changes = {};
 
-				for (i = 0; i < each_value_2.length; i += 1) {
-					const child_ctx = get_each_context_2(ctx, each_value_2, i);
-
-					if (each_blocks_2[i]) {
-						each_blocks_2[i].p(child_ctx, dirty);
-					} else {
-						each_blocks_2[i] = create_each_block_2(child_ctx);
-						each_blocks_2[i].c();
-						each_blocks_2[i].m(div0, null);
-					}
-				}
-
-				for (; i < each_blocks_2.length; i += 1) {
-					each_blocks_2[i].d(1);
-				}
-
-				each_blocks_2.length = each_value_2.length;
+			if (dirty & /*$$scope, index, hasMouseDown, hsl*/ 393219) {
+				colorgradient0_changes.$$scope = { dirty, ctx };
 			}
 
-			if (dirty & /*hsl, hasMouseDown, parseInt*/ 3) {
-				each_value_1 = new Array(101);
-				let i;
-
-				for (i = 0; i < each_value_1.length; i += 1) {
-					const child_ctx = get_each_context_1(ctx, each_value_1, i);
-
-					if (each_blocks_1[i]) {
-						each_blocks_1[i].p(child_ctx, dirty);
-					} else {
-						each_blocks_1[i] = create_each_block_1(child_ctx);
-						each_blocks_1[i].c();
-						each_blocks_1[i].m(div2, null);
-					}
-				}
-
-				for (; i < each_blocks_1.length; i += 1) {
-					each_blocks_1[i].d(1);
-				}
-
-				each_blocks_1.length = each_value_1.length;
+			if (!updating_hslNum && dirty & /*hsl*/ 1) {
+				updating_hslNum = true;
+				colorgradient0_changes.hslNum = /*hsl*/ ctx[0].h;
+				Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["add_flush_callback"])(() => updating_hslNum = false);
 			}
 
-			if (dirty & /*hsl, hasMouseDown, parseInt*/ 3) {
-				each_value = new Array(101);
-				let i;
+			colorgradient0.$set(colorgradient0_changes);
+			const colorgradient1_changes = {};
 
-				for (i = 0; i < each_value.length; i += 1) {
-					const child_ctx = get_each_context(ctx, each_value, i);
-
-					if (each_blocks[i]) {
-						each_blocks[i].p(child_ctx, dirty);
-					} else {
-						each_blocks[i] = create_each_block(child_ctx);
-						each_blocks[i].c();
-						each_blocks[i].m(div4, null);
-					}
-				}
-
-				for (; i < each_blocks.length; i += 1) {
-					each_blocks[i].d(1);
-				}
-
-				each_blocks.length = each_value.length;
+			if (dirty & /*$$scope, hsl, index, hasMouseDown*/ 393219) {
+				colorgradient1_changes.$$scope = { dirty, ctx };
 			}
+
+			if (!updating_hslNum_1 && dirty & /*hsl*/ 1) {
+				updating_hslNum_1 = true;
+				colorgradient1_changes.hslNum = /*hsl*/ ctx[0].s;
+				Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["add_flush_callback"])(() => updating_hslNum_1 = false);
+			}
+
+			colorgradient1.$set(colorgradient1_changes);
+			const colorgradient2_changes = {};
+
+			if (dirty & /*$$scope, hsl, index, hasMouseDown*/ 393219) {
+				colorgradient2_changes.$$scope = { dirty, ctx };
+			}
+
+			if (!updating_hslNum_2 && dirty & /*hsl*/ 1) {
+				updating_hslNum_2 = true;
+				colorgradient2_changes.hslNum = /*hsl*/ ctx[0].l;
+				Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["add_flush_callback"])(() => updating_hslNum_2 = false);
+			}
+
+			colorgradient2.$set(colorgradient2_changes);
 		},
-		i: svelte_internal__WEBPACK_IMPORTED_MODULE_0__["noop"],
-		o: svelte_internal__WEBPACK_IMPORTED_MODULE_0__["noop"],
+		i(local) {
+			if (current) return;
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_in"])(colorgradient0.$$.fragment, local);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_in"])(colorgradient1.$$.fragment, local);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_in"])(colorgradient2.$$.fragment, local);
+			current = true;
+		},
+		o(local) {
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_out"])(colorgradient0.$$.fragment, local);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_out"])(colorgradient1.$$.fragment, local);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_out"])(colorgradient2.$$.fragment, local);
+			current = false;
+		},
 		d(detaching) {
-			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(div6);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["destroy_each"])(each_blocks_2, detaching);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["destroy_each"])(each_blocks_1, detaching);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["destroy_each"])(each_blocks, detaching);
+			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(div3);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["destroy_component"])(colorgradient0);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["destroy_component"])(colorgradient1);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["destroy_component"])(colorgradient2);
+			mounted = false;
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["run_all"])(dispose);
 		}
 	};
 }
@@ -4058,6 +4124,15 @@ function instance($$self, $$props, $$invalidate) {
 		if (hasMouseDown) $$invalidate(0, hsl.h = index, hsl);
 	};
 
+	function colorgradient0_hslNum_binding(value) {
+		if ($$self.$$.not_equal(hsl.h, value)) {
+			hsl.h = value;
+			$$invalidate(0, hsl);
+		}
+	}
+
+	const mouseleave_handler = () => $$invalidate(1, hasMouseDown = false);
+
 	const mousedown_handler_1 = index => {
 		$$invalidate(1, hasMouseDown = true);
 		$$invalidate(0, hsl.s = index, hsl);
@@ -4068,6 +4143,15 @@ function instance($$self, $$props, $$invalidate) {
 	const mousemove_handler_1 = index => {
 		if (hasMouseDown) $$invalidate(0, hsl.s = index, hsl);
 	};
+
+	function colorgradient1_hslNum_binding(value) {
+		if ($$self.$$.not_equal(hsl.s, value)) {
+			hsl.s = value;
+			$$invalidate(0, hsl);
+		}
+	}
+
+	const mouseleave_handler_1 = () => $$invalidate(1, hasMouseDown = false);
 
 	const mousedown_handler_2 = index => {
 		$$invalidate(1, hasMouseDown = true);
@@ -4080,6 +4164,15 @@ function instance($$self, $$props, $$invalidate) {
 		if (hasMouseDown) $$invalidate(0, hsl.l = index, hsl);
 	};
 
+	function colorgradient2_hslNum_binding(value) {
+		if ($$self.$$.not_equal(hsl.l, value)) {
+			hsl.l = value;
+			$$invalidate(0, hsl);
+		}
+	}
+
+	const mouseleave_handler_2 = () => $$invalidate(1, hasMouseDown = false);
+
 	$$self.$$set = $$props => {
 		if ('hsl' in $$props) $$invalidate(0, hsl = $$props.hsl);
 	};
@@ -4090,12 +4183,18 @@ function instance($$self, $$props, $$invalidate) {
 		mousedown_handler,
 		mouseup_handler,
 		mousemove_handler,
+		colorgradient0_hslNum_binding,
+		mouseleave_handler,
 		mousedown_handler_1,
 		mouseup_handler_1,
 		mousemove_handler_1,
+		colorgradient1_hslNum_binding,
+		mouseleave_handler_1,
 		mousedown_handler_2,
 		mouseup_handler_2,
-		mousemove_handler_2
+		mousemove_handler_2,
+		colorgradient2_hslNum_binding,
+		mouseleave_handler_2
 	];
 }
 

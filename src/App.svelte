@@ -66,18 +66,12 @@
 
 {#if hasSelected}
   <main id="main">
-    <!-- 头部信息 -->
-    <h1>HSL调节器</h1>
     <!-- 颜色信息 -->
     <div class="color-detail">
       <div
         class="color-palate"
         style="background-color: hsl({_hsl.h},{_hsl.s}%,{_hsl.l}%);"
       >
-        <span>文字颜色</span>
-        <span>文字颜色</span>
-        <span>文字颜色</span>
-        <span>文字颜色</span>
         <span>文字颜色</span>
         <span>文字颜色</span>
         <span>文字颜色</span>
@@ -111,15 +105,6 @@
     overflow: hidden;
     padding: 0 16px 16px 16px;
   }
-  h1 {
-    font-size: 12px;
-    font-weight: 500;
-    color: rgba(32, 32, 32, 0.8);
-  }
-
-  :global(.jsdesign-dark) h1 {
-    color: rgba(255, 255, 255, 0.9);
-  }
 
   .color-detail {
     display: flex;
@@ -138,6 +123,8 @@
     flex-wrap: wrap;
     justify-content: flex-start;
     box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+    margin-top: 12px;
+    min-height: 22px;
   }
   .color-palate span {
     margin: 4px;

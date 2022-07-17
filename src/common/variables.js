@@ -5,7 +5,7 @@ const variables = {
     },
     guiSize: {
         width: 440,
-        height: 311
+        height: 294
     },
     hsl: {
         h: 0,
