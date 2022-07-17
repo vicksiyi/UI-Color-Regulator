@@ -5,6 +5,7 @@
   import { on, emit } from "./common/events";
   import { onMount } from "svelte";
   import "./style/button.css";
+  import { updateGuiSize } from "./common/global";
 
   let baseHsl = hsl;
   let hasSelected = false;
@@ -26,7 +27,7 @@
     if (!hasSelected) {
       emit("CHANGE_GUI_SIZE", guiSizeEmpty);
     } else {
-      emit("CHANGE_GUI_SIZE", guiSize);
+      updateGuiSize(guiSize);
     }
   });
 
