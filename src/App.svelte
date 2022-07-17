@@ -141,10 +141,15 @@
     margin-top: 12px;
     min-height: 22px;
     text-align: center;
+    width: 100%;
   }
   .color-palate span {
     margin: 4px;
     width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding: 0 12px;
   }
 
   footer {

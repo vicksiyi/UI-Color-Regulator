@@ -158,12 +158,10 @@ const selectChangedHandler = () => {
                 console.error(err);
             }
         })();
-        if (fillColor) {
-            Object(_common_events__WEBPACK_IMPORTED_MODULE_0__["emit"])('UPDATE_COLOR', {
-                color: Object(_common_convertColor__WEBPACK_IMPORTED_MODULE_1__["RGBToHSL"])(Object(_common_convertColor__WEBPACK_IMPORTED_MODULE_1__["jsDesignRGBToRGB"])(fillColor)),
-                fonts
-            });
-        }
+        Object(_common_events__WEBPACK_IMPORTED_MODULE_0__["emit"])('UPDATE_COLOR', {
+            color: fillColor ? Object(_common_convertColor__WEBPACK_IMPORTED_MODULE_1__["RGBToHSL"])(Object(_common_convertColor__WEBPACK_IMPORTED_MODULE_1__["jsDesignRGBToRGB"])(fillColor)) : { h: 0, s: 100, l: 100 },
+            fonts
+        });
     }
     else {
         Object(_common_events__WEBPACK_IMPORTED_MODULE_0__["emit"])('SELECTION_CHANGED', false);
@@ -179,12 +177,13 @@ Object(_common_events__WEBPACK_IMPORTED_MODULE_0__["on"])("APPLY_COLOR", (hsl) =
     let jsDesignRGB = Object(_common_convertColor__WEBPACK_IMPORTED_MODULE_1__["webRGBToJsDesignRGB"])(RGB);
     let selection = selectNode();
     if (selection) {
-        selection.fills = selection.fills.map(fill => {
+        selection.fills = selection.fills.length > 0 ? selection.fills.map(fill => {
             if (fill.type === 'SOLID')
                 return { type: 'SOLID', color: jsDesignRGB };
-            else
-                fill;
-        });
+        }) : [{ type: 'SOLID', color: jsDesignRGB }];
+    }
+    else {
+        jsDesign.notify('应用失败，未选择含填充色图层');
     }
 });
 jsDesign.on('selectionchange', selectChangedHandler);

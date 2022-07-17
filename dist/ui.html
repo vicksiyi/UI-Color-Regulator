@@ -2962,7 +2962,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function add_css(target) {
-	Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append_styles"])(target, "svelte-r6heoo", "main.svelte-r6heoo.svelte-r6heoo{overflow:hidden;padding:0 16px 16px 16px}.color-detail.svelte-r6heoo.svelte-r6heoo{display:flex;justify-content:space-around}.color-detail.svelte-r6heoo>div.svelte-r6heoo{border-radius:2px}.color-palate.svelte-r6heoo.svelte-r6heoo{flex:1;padding:4px 8px;color:#fff;display:flex;flex-wrap:wrap;justify-content:flex-start;box-shadow:0 2px 12px 0 rgba(0, 0, 0, 0.1);margin-top:12px;min-height:22px;text-align:center}.color-palate.svelte-r6heoo span.svelte-r6heoo{margin:4px;width:100%}footer.svelte-r6heoo.svelte-r6heoo{width:auto;display:flex;justify-content:flex-end}.btn.svelte-r6heoo.svelte-r6heoo{padding:8px 16px;border-radius:4px}.btn.svelte-r6heoo.svelte-r6heoo:first-child{margin-right:12px}");
+	Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append_styles"])(target, "svelte-13s1m0h", "main.svelte-13s1m0h.svelte-13s1m0h{overflow:hidden;padding:0 16px 16px 16px}.color-detail.svelte-13s1m0h.svelte-13s1m0h{display:flex;justify-content:space-around}.color-detail.svelte-13s1m0h>div.svelte-13s1m0h{border-radius:2px}.color-palate.svelte-13s1m0h.svelte-13s1m0h{flex:1;padding:4px 8px;color:#fff;display:flex;flex-wrap:wrap;justify-content:flex-start;box-shadow:0 2px 12px 0 rgba(0, 0, 0, 0.1);margin-top:12px;min-height:22px;text-align:center;width:100%}.color-palate.svelte-13s1m0h span.svelte-13s1m0h{margin:4px;width:100%;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;padding:0 12px}footer.svelte-13s1m0h.svelte-13s1m0h{width:auto;display:flex;justify-content:flex-end}.btn.svelte-13s1m0h.svelte-13s1m0h{padding:8px 16px;border-radius:4px}.btn.svelte-13s1m0h.svelte-13s1m0h:first-child{margin-right:12px}");
 }
 
 function get_each_context(ctx, list, i) {
@@ -2989,7 +2989,7 @@ function create_else_block_1(ctx) {
 			main = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("main");
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["create_component"])(empty_1.$$.fragment);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(main, "id", "main");
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(main, "class", "svelte-r6heoo");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(main, "class", "svelte-13s1m0h");
 		},
 		m(target, anchor) {
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, main, anchor);
@@ -3074,14 +3074,14 @@ function create_if_block(ctx) {
 			button1.textContent = "应用至画布";
 			t5 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
 			div2 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("div");
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(div0, "class", "color-palate svelte-r6heoo");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(div0, "class", "color-palate svelte-13s1m0h");
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_style"])(div0, "background-color", "hsl(" + /*_hsl*/ ctx[2].h + "," + /*_hsl*/ ctx[2].s + "%," + /*_hsl*/ ctx[2].l + "%)");
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(div1, "class", "color-detail svelte-r6heoo");
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(button0, "class", "btn js-design-master js-design-second-button svelte-r6heoo");
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(button1, "class", "btn js-design-master js-design-master-button svelte-r6heoo");
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(footer, "class", "svelte-r6heoo");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(div1, "class", "color-detail svelte-13s1m0h");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(button0, "class", "btn js-design-master js-design-second-button svelte-13s1m0h");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(button1, "class", "btn js-design-master js-design-master-button svelte-13s1m0h");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(footer, "class", "svelte-13s1m0h");
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(main, "id", "main");
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(main, "class", "svelte-r6heoo");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(main, "class", "svelte-13s1m0h");
 		},
 		m(target, anchor) {
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, main, anchor);
@@ -3162,7 +3162,7 @@ function create_else_block(ctx) {
 		c() {
 			span = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("span");
 			span.textContent = "文字颜色";
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(span, "class", "svelte-r6heoo");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(span, "class", "svelte-13s1m0h");
 		},
 		m(target, anchor) {
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, span, anchor);
@@ -3245,7 +3245,7 @@ function create_each_block(ctx) {
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_style"])(span, "font-size", /*_text*/ ctx[8].fontSize);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_style"])(span, "color", /*_text*/ ctx[8].color);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_style"])(span, "font-family", "'" + /*_text*/ ctx[8].fontFamily.family + "'");
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(span, "class", "svelte-r6heoo");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(span, "class", "svelte-13s1m0h");
 		},
 		m(target, anchor) {
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, span, anchor);

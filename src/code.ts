@@ -77,15 +77,13 @@ const selectChangedHandler = () => {
                 console.error(err);
             }
         })()
-        if (fillColor) {
-            emit<UpdateColorHandler>(
-                'UPDATE_COLOR',
-                {
-                    color: RGBToHSL(jsDesignRGBToRGB(fillColor)),
-                    fonts
-                }
-            )
-        }
+        emit<UpdateColorHandler>(
+            'UPDATE_COLOR',
+            {
+                color: fillColor ? RGBToHSL(jsDesignRGBToRGB(fillColor)) : { h: 0, s: 100, l: 100 },
+                fonts
+            }
+        )
     } else {
         emit<SelectionChangedHandler>('SELECTION_CHANGED', false);
     }
@@ -112,10 +110,12 @@ on<ApplyColorHandler>("APPLY_COLOR", (hsl: HSL) => {
     let jsDesignRGB = webRGBToJsDesignRGB(RGB);
     let selection = selectNode();
     if (selection) {
-        selection.fills = (selection.fills as Paint[]).map(fill => {
+        // @ts-ignore
+        selection.fills = selection.fills.length > 0 ? selection.fills.map(fill => {
             if (fill.type === 'SOLID') return { type: 'SOLID', color: jsDesignRGB };
-            else fill;
-        })
+        }) : [{ type: 'SOLID', color: jsDesignRGB }];
+    } else {
+        jsDesign.notify('应用失败，未选择含填充色图层');
     }
 })
 
