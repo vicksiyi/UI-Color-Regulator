@@ -100,15 +100,39 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const SupportNode = ['FRAME', 'RECTANGLE', 'ELLIPSE', 'LINE', 'POLYGON', 'STAR', 'TEXT'];
+const hasChildrenNode = ['FRAME', 'GROUP'];
+const loadFonts = [];
 const selectNode = () => {
     let selections = jsDesign.currentPage.selection;
     let selection;
     for (let node of selections) {
+        if (selection && SupportNode.includes(node.type))
+            jsDesign.notify('已选择多个图层，默认采用最后一个');
         if (SupportNode.includes(node.type)) {
             selection = node;
         }
     }
     return selection;
+};
+const addLoadFont = (fontName) => {
+    if (!loadFonts.map(font => JSON.stringify(font)).includes(JSON.stringify(fontName))) {
+        loadFonts.push(fontName);
+    }
+};
+const getTextNode = (nodes, fonts) => {
+    for (const node of nodes) {
+        if (node.type === 'TEXT' && node.visible) {
+            addLoadFont(node.fontName);
+            let fillSolid = node.fills.find(attr => attr.type === 'SOLID');
+            let color = Object(_common_convertColor__WEBPACK_IMPORTED_MODULE_1__["jsDesignRGBToRGB"])(fillSolid.color);
+            fonts.push({
+                content: node.characters,
+                fontFamily: node.fontName,
+                fontSize: node.fontSize,
+                color: `rgba(${color.r},${color.g},${color.b},${fillSolid.opacity})`,
+            });
+        }
+    }
 };
 const selectChangedHandler = () => {
     let selection = selectNode();
@@ -120,8 +144,24 @@ const selectChangedHandler = () => {
             if (item.type === 'SOLID')
                 fillColor = item.color;
         }
+        let fonts = [];
+        getTextNode(selection.children, fonts);
+        (async () => {
+            try {
+                for (let item of loadFonts) {
+                    await jsDesign.loadFontAsync(item);
+                }
+            }
+            catch (err) {
+                console.error(err);
+            }
+        })();
+        console.log(fonts);
         if (fillColor) {
-            Object(_common_events__WEBPACK_IMPORTED_MODULE_0__["emit"])('UPDATE_COLOR', Object(_common_convertColor__WEBPACK_IMPORTED_MODULE_1__["RGBToHSL"])(Object(_common_convertColor__WEBPACK_IMPORTED_MODULE_1__["jsDesignRGBToRGB"])(fillColor)));
+            Object(_common_events__WEBPACK_IMPORTED_MODULE_0__["emit"])('UPDATE_COLOR', {
+                color: Object(_common_convertColor__WEBPACK_IMPORTED_MODULE_1__["RGBToHSL"])(Object(_common_convertColor__WEBPACK_IMPORTED_MODULE_1__["jsDesignRGBToRGB"])(fillColor)),
+                fonts
+            });
         }
     }
     else {
@@ -137,7 +177,6 @@ Object(_common_events__WEBPACK_IMPORTED_MODULE_0__["on"])("APPLY_COLOR", (hsl) =
     let RGB = Object(_common_convertColor__WEBPACK_IMPORTED_MODULE_1__["HSLToRGB"])(hsl);
     let jsDesignRGB = Object(_common_convertColor__WEBPACK_IMPORTED_MODULE_1__["webRGBToJsDesignRGB"])(RGB);
     let selection = selectNode();
-    console.log({ r: jsDesignRGB[0], g: jsDesignRGB[1], b: jsDesignRGB[2] }, RGB, jsDesignRGB);
     if (selection) {
         selection.fills = selection.fills.map(fill => {
             if (fill.type === 'SOLID')

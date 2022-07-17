@@ -2960,10 +2960,16 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function add_css(target) {
-	Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append_styles"])(target, "svelte-18oq7hy", "main.svelte-18oq7hy.svelte-18oq7hy{overflow:hidden;padding:0 16px 16px 16px}.color-detail.svelte-18oq7hy.svelte-18oq7hy{display:flex;justify-content:space-around}.color-detail.svelte-18oq7hy>div.svelte-18oq7hy{border-radius:2px}.color-palate.svelte-18oq7hy.svelte-18oq7hy{flex:1;padding:4px 8px;color:#fff;display:flex;flex-wrap:wrap;justify-content:flex-start;box-shadow:0 2px 12px 0 rgba(0, 0, 0, 0.1);margin-top:12px;min-height:22px}.color-palate.svelte-18oq7hy span.svelte-18oq7hy{margin:4px}footer.svelte-18oq7hy.svelte-18oq7hy{width:auto;display:flex;justify-content:flex-end}.btn.svelte-18oq7hy.svelte-18oq7hy{padding:8px 16px;border-radius:4px}.btn.svelte-18oq7hy.svelte-18oq7hy:first-child{margin-right:12px}");
+	Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append_styles"])(target, "svelte-r6heoo", "main.svelte-r6heoo.svelte-r6heoo{overflow:hidden;padding:0 16px 16px 16px}.color-detail.svelte-r6heoo.svelte-r6heoo{display:flex;justify-content:space-around}.color-detail.svelte-r6heoo>div.svelte-r6heoo{border-radius:2px}.color-palate.svelte-r6heoo.svelte-r6heoo{flex:1;padding:4px 8px;color:#fff;display:flex;flex-wrap:wrap;justify-content:flex-start;box-shadow:0 2px 12px 0 rgba(0, 0, 0, 0.1);margin-top:12px;min-height:22px;text-align:center}.color-palate.svelte-r6heoo span.svelte-r6heoo{margin:4px;width:100%}footer.svelte-r6heoo.svelte-r6heoo{width:auto;display:flex;justify-content:flex-end}.btn.svelte-r6heoo.svelte-r6heoo{padding:8px 16px;border-radius:4px}.btn.svelte-r6heoo.svelte-r6heoo:first-child{margin-right:12px}");
 }
 
-// (96:0) {:else}
+function get_each_context(ctx, list, i) {
+	const child_ctx = ctx.slice();
+	child_ctx[8] = list[i];
+	return child_ctx;
+}
+
+// (106:0) {:else}
 function create_else_block(ctx) {
 	let main;
 	let empty_1;
@@ -2981,7 +2987,7 @@ function create_else_block(ctx) {
 			main = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("main");
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["create_component"])(empty_1.$$.fragment);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(main, "id", "main");
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(main, "class", "svelte-18oq7hy");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(main, "class", "svelte-r6heoo");
 		},
 		m(target, anchor) {
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, main, anchor);
@@ -3009,32 +3015,33 @@ function create_else_block(ctx) {
 	};
 }
 
-// (67:0) {#if hasSelected}
+// (70:0) {#if hasSelected}
 function create_if_block(ctx) {
 	let main;
 	let div1;
 	let div0;
-	let span0;
-	let t1;
-	let span1;
-	let t3;
-	let span2;
-	let t5;
+	let t0;
 	let hsl_1;
 	let updating_hsl;
-	let t6;
+	let t1;
 	let footer;
 	let button0;
-	let t8;
+	let t3;
 	let button1;
-	let t10;
+	let t5;
 	let div2;
 	let current;
 	let mounted;
 	let dispose;
+	let each_value = /*_fonts*/ ctx[3];
+	let each_blocks = [];
+
+	for (let i = 0; i < each_value.length; i += 1) {
+		each_blocks[i] = create_each_block(get_each_context(ctx, each_value, i));
+	}
 
 	function hsl_1_hsl_binding(value) {
-		/*hsl_1_hsl_binding*/ ctx[5](value);
+		/*hsl_1_hsl_binding*/ ctx[6](value);
 	}
 
 	let hsl_1_props = {};
@@ -3051,67 +3058,84 @@ function create_if_block(ctx) {
 			main = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("main");
 			div1 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("div");
 			div0 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("div");
-			span0 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("span");
-			span0.textContent = "文字颜色";
-			t1 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
-			span1 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("span");
-			span1.textContent = "文字颜色";
-			t3 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
-			span2 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("span");
-			span2.textContent = "文字颜色";
-			t5 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
+
+			for (let i = 0; i < each_blocks.length; i += 1) {
+				each_blocks[i].c();
+			}
+
+			t0 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["create_component"])(hsl_1.$$.fragment);
-			t6 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
+			t1 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
 			footer = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("footer");
 			button0 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("button");
 			button0.textContent = "重置";
-			t8 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
+			t3 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
 			button1 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("button");
 			button1.textContent = "应用至画布";
-			t10 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
+			t5 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
 			div2 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("div");
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(span0, "class", "svelte-18oq7hy");
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(span1, "class", "svelte-18oq7hy");
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(span2, "class", "svelte-18oq7hy");
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(div0, "class", "color-palate svelte-18oq7hy");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(div0, "class", "color-palate svelte-r6heoo");
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_style"])(div0, "background-color", "hsl(" + /*_hsl*/ ctx[2].h + "," + /*_hsl*/ ctx[2].s + "%," + /*_hsl*/ ctx[2].l + "%)");
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(div1, "class", "color-detail svelte-18oq7hy");
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(button0, "class", "btn js-design-master js-design-second-button svelte-18oq7hy");
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(button1, "class", "btn js-design-master js-design-master-button svelte-18oq7hy");
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(footer, "class", "svelte-18oq7hy");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(div1, "class", "color-detail svelte-r6heoo");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(button0, "class", "btn js-design-master js-design-second-button svelte-r6heoo");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(button1, "class", "btn js-design-master js-design-master-button svelte-r6heoo");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(footer, "class", "svelte-r6heoo");
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(main, "id", "main");
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(main, "class", "svelte-18oq7hy");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(main, "class", "svelte-r6heoo");
 		},
 		m(target, anchor) {
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, main, anchor);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(main, div1);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div1, div0);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div0, span0);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div0, t1);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div0, span1);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div0, t3);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div0, span2);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(main, t5);
+
+			for (let i = 0; i < each_blocks.length; i += 1) {
+				each_blocks[i].m(div0, null);
+			}
+
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(main, t0);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["mount_component"])(hsl_1, main, null);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(main, t6);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(main, t1);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(main, footer);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(footer, button0);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(footer, t8);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(footer, t3);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(footer, button1);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(main, t10);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(main, t5);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(main, div2);
 			current = true;
 
 			if (!mounted) {
 				dispose = [
-					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["listen"])(button0, "click", /*resetHandler*/ ctx[3]),
-					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["listen"])(button1, "click", /*applyHandler*/ ctx[4])
+					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["listen"])(button0, "click", /*resetHandler*/ ctx[4]),
+					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["listen"])(button1, "click", /*applyHandler*/ ctx[5])
 				];
 
 				mounted = true;
 			}
 		},
 		p(ctx, dirty) {
+			if (dirty & /*_fonts*/ 8) {
+				each_value = /*_fonts*/ ctx[3];
+				let i;
+
+				for (i = 0; i < each_value.length; i += 1) {
+					const child_ctx = get_each_context(ctx, each_value, i);
+
+					if (each_blocks[i]) {
+						each_blocks[i].p(child_ctx, dirty);
+					} else {
+						each_blocks[i] = create_each_block(child_ctx);
+						each_blocks[i].c();
+						each_blocks[i].m(div0, null);
+					}
+				}
+
+				for (; i < each_blocks.length; i += 1) {
+					each_blocks[i].d(1);
+				}
+
+				each_blocks.length = each_value.length;
+			}
+
 			if (!current || dirty & /*_hsl*/ 4) {
 				Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_style"])(div0, "background-color", "hsl(" + /*_hsl*/ ctx[2].h + "," + /*_hsl*/ ctx[2].s + "%," + /*_hsl*/ ctx[2].l + "%)");
 			}
@@ -3137,9 +3161,53 @@ function create_if_block(ctx) {
 		},
 		d(detaching) {
 			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(main);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["destroy_each"])(each_blocks, detaching);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["destroy_component"])(hsl_1);
 			mounted = false;
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["run_all"])(dispose);
+		}
+	};
+}
+
+// (78:8) {#each _fonts as _text}
+function create_each_block(ctx) {
+	let span;
+	let t0_value = /*_text*/ ctx[8].content + "";
+	let t0;
+	let t1;
+
+	return {
+		c() {
+			span = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("span");
+			t0 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["text"])(t0_value);
+			t1 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_style"])(span, "font-size", /*_text*/ ctx[8].fontSize);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_style"])(span, "color", /*_text*/ ctx[8].color);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_style"])(span, "font-family", "'" + /*_text*/ ctx[8].fontFamily.family + "'");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(span, "class", "svelte-r6heoo");
+		},
+		m(target, anchor) {
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, span, anchor);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(span, t0);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(span, t1);
+		},
+		p(ctx, dirty) {
+			if (dirty & /*_fonts*/ 8 && t0_value !== (t0_value = /*_text*/ ctx[8].content + "")) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_data"])(t0, t0_value);
+
+			if (dirty & /*_fonts*/ 8) {
+				Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_style"])(span, "font-size", /*_text*/ ctx[8].fontSize);
+			}
+
+			if (dirty & /*_fonts*/ 8) {
+				Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_style"])(span, "color", /*_text*/ ctx[8].color);
+			}
+
+			if (dirty & /*_fonts*/ 8) {
+				Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_style"])(span, "font-family", "'" + /*_text*/ ctx[8].fontFamily.family + "'");
+			}
+		},
+		d(detaching) {
+			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(span);
 		}
 	};
 }
@@ -3218,6 +3286,7 @@ function instance($$self, $$props, $$invalidate) {
 	let hasSelected = false;
 	let themes = 'light';
 	let _hsl = JSON.parse(JSON.stringify(_common_variables__WEBPACK_IMPORTED_MODULE_3__["hsl"]));
+	let _fonts = [];
 
 	const resetHandler = () => {
 		$$invalidate(2, _hsl = JSON.parse(JSON.stringify(baseHsl)));
@@ -3239,7 +3308,10 @@ function instance($$self, $$props, $$invalidate) {
 	});
 
 	// 颜色选择
-	Object(_common_events__WEBPACK_IMPORTED_MODULE_4__["on"])('UPDATE_COLOR', color => {
+	Object(_common_events__WEBPACK_IMPORTED_MODULE_4__["on"])('UPDATE_COLOR', data => {
+		let { color, fonts } = data;
+		if (fonts) $$invalidate(3, _fonts = fonts);
+
 		if (color) {
 			baseHsl = color;
 			$$invalidate(2, _hsl = JSON.parse(JSON.stringify(baseHsl)));
@@ -3284,7 +3356,15 @@ function instance($$self, $$props, $$invalidate) {
 		$$invalidate(2, _hsl);
 	}
 
-	return [hasSelected, themes, _hsl, resetHandler, applyHandler, hsl_1_hsl_binding];
+	return [
+		hasSelected,
+		themes,
+		_hsl,
+		_fonts,
+		resetHandler,
+		applyHandler,
+		hsl_1_hsl_binding
+	];
 }
 
 class App extends svelte_internal__WEBPACK_IMPORTED_MODULE_0__["SvelteComponent"] {

@@ -6,6 +6,13 @@ export type GuiSize = {
     height: number
 }
 
+export type FontStyle = {
+    content: string,
+    fontFamily: FontName,
+    fontSize: number,
+    color: string,
+}
+
 export type SupportElementNode =
     | FrameNode
     | RectangleNode
@@ -14,6 +21,10 @@ export type SupportElementNode =
     | PolygonNode
     | StarNode
     | TextNode;
+
+export type HasChildrenNode =
+    | FrameNode
+    | GroupNode
 
 export interface SelectionChangedHandler extends EventHandler {
     name: 'SELECTION_CHANGED'
@@ -27,7 +38,7 @@ export interface ChangeGuiSizeHandler extends EventHandler {
 
 export interface UpdateColorHandler extends EventHandler {
     name: 'UPDATE_COLOR',
-    handler: (color: HSL) => void
+    handler: (data: { color: HSL, fonts?: FontStyle[] }) => void
 }
 
 export interface ApplyColorHandler extends EventHandler {

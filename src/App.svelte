@@ -10,6 +10,7 @@
   let hasSelected = false;
   let themes = 'light';
   let _hsl = JSON.parse(JSON.stringify(hsl));
+  let _fonts = [];
 
   const resetHandler = ()=>{
     _hsl = JSON.parse(JSON.stringify(baseHsl));
@@ -30,7 +31,9 @@
   });
 
   // 颜色选择
-  on('UPDATE_COLOR', (color)=>{
+  on('UPDATE_COLOR', (data)=>{
+    let {color,fonts} = data;
+    if(fonts) _fonts= fonts;
     if(color) {
       baseHsl = color;
       _hsl = JSON.parse(JSON.stringify(baseHsl));
@@ -72,9 +75,16 @@
         class="color-palate"
         style="background-color: hsl({_hsl.h},{_hsl.s}%,{_hsl.l}%);"
       >
-        <span>文字颜色</span>
-        <span>文字颜色</span>
-        <span>文字颜色</span>
+        {#each _fonts as _text}
+          <span
+            style="
+            font-size:{_text.fontSize};
+            color:{_text.color};
+            font-family:'{_text.fontFamily.family}';"
+          >
+            {_text.content}
+          </span>
+        {/each}
       </div>
     </div>
     <!-- 颜色调节器 -->
@@ -125,9 +135,11 @@
     box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
     margin-top: 12px;
     min-height: 22px;
+    text-align: center;
   }
   .color-palate span {
     margin: 4px;
+    width: 100%;
   }
 
   footer {
