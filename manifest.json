@@ -1,7 +1,10 @@
 {
-    "name": "HSL颜色调节器",
+    "name": "HSL调色板",
     "id": "754415286584382747",
     "api": "1.0.0",
     "main": "./dist/code.js",
-    "ui": "./dist/ui.html"
+    "ui": "./dist/ui.html",
+    "editorType": [
+        "figma"
+    ]
 }

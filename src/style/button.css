@@ -15,33 +15,33 @@
 
 /* 深色模式下 */
 /* 主按钮 */
-.figma-dark .js-design-master-button {
+.jsdesign-dark .js-design-master-button {
     background-color: rgba(69, 150, 255, 1);
     color: rgba(255, 255, 255, 1);
     border: none;
 }
 
-.figma-dark .js-design-master-button:hover {
+.jsdesign-dark .js-design-master-button:hover {
     background: rgba(70, 139, 242, 1);
 }
 
-.figma-dark .js-design-master-button[disabled] {
+.jsdesign-dark .js-design-master-button[disabled] {
     background: rgba(255, 255, 255, 0.3);
 }
 
 /* 次按钮 */
-.figma-dark .js-design-second-button {
+.jsdesign-dark .js-design-second-button {
     border: 1px solid rgba(255, 255, 255, 0.4);
     color: rgba(255, 255, 255, 0.8);
     background: none;
 }
 
-.figma-dark .js-design-second-button:hover {
+.jsdesign-dark .js-design-second-button:hover {
     border: 1px solid rgba(255, 255, 255, 1);
     color: rgba(255, 255, 255, 1);
 }
 
-.figma-dark .js-design-second-button[disabled] {
+.jsdesign-dark .js-design-second-button[disabled] {
     border: 1px solid rgba(255, 255, 255, 0.1);
     color: rgba(255, 255, 255, 0.3);
 }

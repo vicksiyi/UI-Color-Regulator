@@ -43,11 +43,20 @@ const getTextNode = (nodes: SceneNode[], fonts: FontStyle[]): void => {
             addLoadFont(node.fontName as FontName);
             let fillSolid: SolidPaint = (node.fills as Paint[]).find(attr => attr.type === 'SOLID') as SolidPaint;
             let color = jsDesignRGBToRGB(fillSolid.color);
+            let effects = node.effects;
+            let _effects: string[] = [];
+            for (let effect of effects) {
+                if (effect.type === 'INNER_SHADOW') {
+                    let color: RGBA = jsDesignRGBToRGB(effect.color) as RGBA;
+                    _effects.push(`${effect.offset.x}px ${effect.offset.y}px ${effect.radius}px rgba(${color.r},${color.g},${color.b},${color.a})`)
+                }
+            }
             fonts.push({
                 content: (node as TextNode).characters,
                 fontFamily: (node.fontName as FontName),
                 fontSize: <number>node.fontSize,
                 color: `rgba(${color.r},${color.g},${color.b},${fillSolid.opacity})`,
+                textShadow: `${_effects.join(',')}`
             })
         }
     }

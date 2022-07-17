@@ -11,6 +11,7 @@ export type FontStyle = {
     fontFamily: FontName,
     fontSize: number,
     color: string,
+    textShadow: string,
 }
 
 export type SupportElementNode =

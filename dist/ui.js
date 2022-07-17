@@ -115,7 +115,7 @@ module.exports = exports;
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, "@charset \"UTF-8\";\n/* 按钮样式 */\n.js-design-button {\n  width: 100%;\n  border-radius: 6px;\n  height: 32px;\n}\n\n.js-design-master-button {\n  font-weight: 400;\n}\n\n.js-design-second-button {\n  font-weight: 300;\n}\n\n/* 深色模式下 */\n/* 主按钮 */\n.figma-dark .js-design-master-button {\n  background-color: rgb(69, 150, 255);\n  color: rgb(255, 255, 255);\n  border: none;\n}\n\n.figma-dark .js-design-master-button:hover {\n  background: rgb(70, 139, 242);\n}\n\n.figma-dark .js-design-master-button[disabled] {\n  background: rgba(255, 255, 255, 0.3);\n}\n\n/* 次按钮 */\n.figma-dark .js-design-second-button {\n  border: 1px solid rgba(255, 255, 255, 0.4);\n  color: rgba(255, 255, 255, 0.8);\n  background: none;\n}\n\n.figma-dark .js-design-second-button:hover {\n  border: 1px solid rgb(255, 255, 255);\n  color: rgb(255, 255, 255);\n}\n\n.figma-dark .js-design-second-button[disabled] {\n  border: 1px solid rgba(255, 255, 255, 0.1);\n  color: rgba(255, 255, 255, 0.3);\n}\n\n/* 浅色模式 */\n/* 主按钮 */\n.js-design-master-button {\n  background-color: rgb(69, 150, 255);\n  color: rgb(255, 255, 255);\n  border: none;\n}\n\n.js-design-master-button:hover {\n  background-color: rgb(70, 139, 242);\n}\n\n.js-design-master-button[disabled] {\n  background-color: rgba(0, 0, 0, 0.3);\n}\n\n.js-design-second-button {\n  border: 1px solid rgba(32, 32, 32, 0.2);\n  color: rgb(32, 32, 32);\n  background: none;\n}\n\n.js-design-second-button:hover {\n  border: 1px solid rgba(32, 32, 32, 0.4);\n}\n\n.js-design-second-button[disabled] {\n  border: 1px solid rgba(32, 32, 32, 0.1);\n  color: rgba(32, 32, 32, 0.3);\n}", ""]);
+exports.push([module.i, "@charset \"UTF-8\";\n/* 按钮样式 */\n.js-design-button {\n  width: 100%;\n  border-radius: 6px;\n  height: 32px;\n}\n\n.js-design-master-button {\n  font-weight: 400;\n}\n\n.js-design-second-button {\n  font-weight: 300;\n}\n\n/* 深色模式下 */\n/* 主按钮 */\n.jsdesign-dark .js-design-master-button {\n  background-color: rgb(69, 150, 255);\n  color: rgb(255, 255, 255);\n  border: none;\n}\n\n.jsdesign-dark .js-design-master-button:hover {\n  background: rgb(70, 139, 242);\n}\n\n.jsdesign-dark .js-design-master-button[disabled] {\n  background: rgba(255, 255, 255, 0.3);\n}\n\n/* 次按钮 */\n.jsdesign-dark .js-design-second-button {\n  border: 1px solid rgba(255, 255, 255, 0.4);\n  color: rgba(255, 255, 255, 0.8);\n  background: none;\n}\n\n.jsdesign-dark .js-design-second-button:hover {\n  border: 1px solid rgb(255, 255, 255);\n  color: rgb(255, 255, 255);\n}\n\n.jsdesign-dark .js-design-second-button[disabled] {\n  border: 1px solid rgba(255, 255, 255, 0.1);\n  color: rgba(255, 255, 255, 0.3);\n}\n\n/* 浅色模式 */\n/* 主按钮 */\n.js-design-master-button {\n  background-color: rgb(69, 150, 255);\n  color: rgb(255, 255, 255);\n  border: none;\n}\n\n.js-design-master-button:hover {\n  background-color: rgb(70, 139, 242);\n}\n\n.js-design-master-button[disabled] {\n  background-color: rgba(0, 0, 0, 0.3);\n}\n\n.js-design-second-button {\n  border: 1px solid rgba(32, 32, 32, 0.2);\n  color: rgb(32, 32, 32);\n  background: none;\n}\n\n.js-design-second-button:hover {\n  border: 1px solid rgba(32, 32, 32, 0.4);\n}\n\n.js-design-second-button[disabled] {\n  border: 1px solid rgba(32, 32, 32, 0.1);\n  color: rgba(32, 32, 32, 0.3);\n}", ""]);
 // Exports
 module.exports = exports;
 
@@ -2971,7 +2971,7 @@ function get_each_context(ctx, list, i) {
 	return child_ctx;
 }
 
-// (111:0) {:else}
+// (112:0) {:else}
 function create_else_block_1(ctx) {
 	let main;
 	let empty_1;
@@ -3154,7 +3154,7 @@ function create_if_block(ctx) {
 	};
 }
 
-// (90:8) {:else}
+// (91:8) {:else}
 function create_else_block(ctx) {
 	let span;
 
@@ -3245,6 +3245,7 @@ function create_each_block(ctx) {
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_style"])(span, "font-size", /*_text*/ ctx[8].fontSize);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_style"])(span, "color", /*_text*/ ctx[8].color);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_style"])(span, "font-family", "'" + /*_text*/ ctx[8].fontFamily.family + "'");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_style"])(span, "text-shadow", /*_text*/ ctx[8].textShadow);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(span, "class", "svelte-13s1m0h");
 		},
 		m(target, anchor) {
@@ -3265,6 +3266,10 @@ function create_each_block(ctx) {
 
 			if (dirty & /*_fonts*/ 8) {
 				Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_style"])(span, "font-family", "'" + /*_text*/ ctx[8].fontFamily.family + "'");
+			}
+
+			if (dirty & /*_fonts*/ 8) {
+				Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_style"])(span, "text-shadow", /*_text*/ ctx[8].textShadow);
 			}
 		},
 		d(detaching) {

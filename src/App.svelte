@@ -82,7 +82,8 @@
               style="
           font-size:{_text.fontSize};
           color:{_text.color};
-          font-family:'{_text.fontFamily.family}';"
+          font-family:'{_text.fontFamily.family}';
+          text-shadow: {_text.textShadow};"
             >
               {_text.content}
             </span>

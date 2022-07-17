@@ -1,4 +1,9 @@
 const namesRGB = ['r', 'g', 'b'];
+import chroma, { Color } from 'chroma-js'
+
+export function GLtoHex(color) {
+	return chroma.gl(color.r, color.g, color.b, color.a).hex()
+}
 
 export const webRGBToJsDesignRGB = (color) => {
     const rgb = {};
@@ -56,6 +61,7 @@ export const jsDesignRGBToRGB = (color) => {
     namesRGB.forEach((e, i) => {
         rgb[e] = color[e] * 255;
     })
+    if (color['a']) rgb['a'] = color['a'];
     return rgb;
 }
 
