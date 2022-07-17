@@ -3,10 +3,12 @@
 
 # 功能
 ## 版本V0.1
-- [x]  支持HSL颜色调色器
+- [x]  支持HSL颜色调色板
 
 # 效果图
 - 浅色模式
-<img width="932" alt="Screen Shot 2022-07-17 at 8 37 41 PM" src="https://user-images.githubusercontent.com/39822906/179398705-0e0909d4-139a-48c2-9c3b-ff2dc4ea7740.png">
+<img width="929" alt="Screen Shot 2022-07-17 at 8 43 57 PM" src="https://user-images.githubusercontent.com/39822906/179398885-ce46713d-f476-4a3f-9e02-d515d5a82ff4.png">
 - 深色模式
-<img width="928" alt="Screen Shot 2022-07-17 at 8 37 58 PM" src="https://user-images.githubusercontent.com/39822906/179398715-1568e64f-26f1-48b3-9ee9-08734b6fd198.png">
+<img width="930" alt="Screen Shot 2022-07-17 at 8 43 39 PM" src="https://user-images.githubusercontent.com/39822906/179398903-1a2d89ef-9325-41f4-98d7-c5b301a9d2b0.png">
+
+
