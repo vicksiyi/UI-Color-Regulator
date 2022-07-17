@@ -8,14 +8,16 @@
   <div class="color-regulator">
     <span>H: </span>
     <div class="color-gradient">
-      {#each new Array(360) as _, index}
+      {#each new Array(361) as _, index}
         <div>
           <span
             class="pointer"
-            style="visibility: {index === hsl.h ? 'visible' : 'hidden'};"
+            style="visibility: {index === parseInt(hsl.h)
+              ? 'visible'
+              : 'hidden'};"
           >
             <div class="pointer-content">
-              <span class="num">{hsl.h}</span>
+              <span class="num">{parseInt(hsl.h)}</span>
               <i class="pointer-down" />
             </div>
           </span>
@@ -38,14 +40,16 @@
   <div class="color-regulator">
     <span>S: </span>
     <div class="color-gradient">
-      {#each new Array(100) as _, index}
+      {#each new Array(101) as _, index}
         <div>
           <span
             class="pointer"
-            style="visibility: {index === hsl.s ? 'visible' : 'hidden'};"
+            style="visibility: {index === parseInt(hsl.s)
+              ? 'visible'
+              : 'hidden'};"
           >
             <div class="pointer-content">
-              <span class="num">{hsl.s}</span>
+              <span class="num">{parseInt(hsl.s)}</span>
               <i class="pointer-down" />
             </div>
           </span>
@@ -68,14 +72,16 @@
   <div class="color-regulator">
     <span>L: </span>
     <div class="color-gradient">
-      {#each new Array(100) as _, index}
+      {#each new Array(101) as _, index}
         <div>
           <span
             class="pointer"
-            style="visibility: {index === hsl.l ? 'visible' : 'hidden'};"
+            style="visibility: {index === parseInt(hsl.l)
+              ? 'visible'
+              : 'hidden'};"
           >
             <div class="pointer-content">
-              <span class="num">{hsl.l}</span>
+              <span class="num">{parseInt(hsl.l)}</span>
               <i class="pointer-down" />
             </div>
           </span>
@@ -109,6 +115,11 @@
 
   .color-regulator > span {
     color: rgba(32, 32, 32, 0.8);
+    font-size: 16px;
+  }
+
+  :global(.jsdesign-dark) .color-regulator > span {
+    color: rgba(255, 255, 255, 0.9);
     font-size: 16px;
   }
 
